@@ -1,18 +1,19 @@
 #include <stdio.h>
 
-int inc(int counter);
+void f(void);
+int i;
 
 int main(void)
 {
-    int i = 10;
-    printf("before fct call i = %d\n", i);
-    inc(i);
-    printf("after fct call i = %d\n", i);
+    for (i = 0; i < 5; i++)
+    {
+        f();
+    }
     return 0;
 }
 
-int inc(int counter)
+void f(void)
 {
-    counter++;
-    return counter;
+    for (i = 0; i < 10; i++)
+        printf("#");
 }
