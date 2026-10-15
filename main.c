@@ -2,16 +2,12 @@
 
 int main(void)
 {
-    int flag = 1;
-    int y;
-
-    while (flag != 0)
+    int i;
+    for (i = 0; i < 5; i++)
     {
-        y = 3;
-        flag = 0;
+        int temp = 1;
+        printf("temp = %d\n", temp);
+        temp++;
     }
-
-    y = 4;
-
     return 0;
 }
